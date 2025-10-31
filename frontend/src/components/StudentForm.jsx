@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 import React, { useState } from 'react';
 import { FileText, Download, User, Phone, MapPin, Calendar, Users, GraduationCap, Printer } from 'lucide-react';
 
@@ -32,38 +31,6 @@ const HostelAdmissionForm = () => {
     studentSignature: '',
     parentSignature: '',
     admissionDate: new Date().toISOString().split('T')[0]
-=======
-import React, { useState } from "react";
-import jsPDF from "jspdf";
-import autoTable from "jspdf-autotable";
-import { db, storage } from "../firebase";
-import { collection, addDoc } from "firebase/firestore";
-import { ref, uploadBytes, getDownloadURL } from "firebase/storage";
-
-export default function StudentForm() {
-  const [form, setForm] = useState({
-    class: "",
-    session: "",
-    studentName: "",
-    motherName: "",
-    fatherName: "",
-    mobile1: "",
-    mobile2: "",
-    address: "",
-    village: "",
-    po: "",
-    thana: "",
-    district: "",
-    pincode: "",
-    dob: "",
-    visitors: ["", "", "", ""],
-    coaching: [
-      { name: "", time: "", address: "" },
-      { name: "", time: "", address: "" },
-      { name: "", time: "", address: "" },
-      { name: "", time: "", address: "" },
-    ],
->>>>>>> 2dbb94abc9936030c27f37eeaba300d9c454c886
   });
 
   const [showPreview, setShowPreview] = useState(false);
